@@ -14,7 +14,7 @@ export default function header() {
     
     const items = [
                     {item: 'About us', route: '/aboutUs'},
-                    {item: 'Projects', route: '/projects'},
+                    {item: 'Join Us', route: '/projects'},
                     {item: 'Donate', route: '/donate'},
                     {item: 'Contact Us', route: '/contactUs'}
                     
