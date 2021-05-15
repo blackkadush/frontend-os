@@ -1,4 +1,5 @@
-import signUpForm from './../Signup'
+import contactUsForm from './../contactForm'
+
 export default function contactUs() {
 
     const contactUsContainer = document.createElement('main')
@@ -14,7 +15,7 @@ export default function contactUs() {
 
     const RightContainer = document.createElement('div')
     RightContainer.setAttribute('class', 'contact-us_Right-container')
-    RightContainer.append(signUpForm())
+    RightContainer.append(contactUsForm())
     contactUsContainer.append(RightContainer)
 
    

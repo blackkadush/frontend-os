@@ -15,7 +15,6 @@ html, body, body div, span, object, iframe, p, blockquote, pre, abbr, address, c
     justify-content: center;
     align-items: center;
     align-self: center;
-    width: 25%;
     margin: 0 auto;
 }
 
@@ -399,17 +398,55 @@ html, body, body div, span, object, iframe, p, blockquote, pre, abbr, address, c
     margin: 1rem;
 }
 /* ########### Contact Us ############ */
+
+.contact-US_container{
+    display: flex;
+    align-items: center;
+    width: 90%;
+    height: 40rem;
+    /* background-color: lightpink; */
+    margin: 1rem;
+}
+
 .contact-us_Left-Container-Picture{
     display: flex;
     border-radius: 1rem;
     max-width: 40rem;
     max-height: 40rem;
 }
+
+.contact-us_Right-container{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    
+}
+
+
 /* ########### Projects ############ */
+.Projects_container{
+
+    display: flex;
+    align-items: center;
+    width: 90%;
+    height: 40rem;
+    /* background-color: lightpink; */
+    margin: 1rem;
+}
 .Projects_Left-Container-Picture{ 
     display: flex;
     max-width: 40rem;
     max-height: 40rem;
+}
+
+.Projects_Right-container{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+.orSignin {
+    background-color:yellow;
+    border-radius: 20px;
 }
 
 /* ########### media query ############ */
@@ -451,5 +488,10 @@ html, body, body div, span, object, iframe, p, blockquote, pre, abbr, address, c
     }
     .header nav span {
         margin: .5rem 0;
+    }
+
+    .Projects_Left-Container-Picture, .Projects_Left-Container{ 
+        display: block;
+        
     }
 }

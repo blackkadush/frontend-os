@@ -1,17 +1,8 @@
-export default function signUpForm(){
+export default function signInForm(){
     
     const form = document.createElement('form')
     form.setAttribute('target', '_blank')
     form.setAttribute('id', 'signup-form')
-
-    const nameInput = document.createElement('input')
-    nameInput.setAttribute('type', 'text')
-    nameInput.setAttribute('name', 'name')
-    const nameLabel = document.createElement('label')
-    const nameLabelText = document.createTextNode('Full Name:')
-    nameLabel.append(nameLabelText)
-    nameLabel.append(nameInput)
-    nameInput.setAttribute('for', 'name')
     
     const emailInput = document.createElement('input')
     emailInput.setAttribute('type', 'email')
@@ -22,15 +13,6 @@ export default function signUpForm(){
     emailLabel.append(emailInput)
     emailLabel.setAttribute('for', 'email')
 
-    const phoneNumberInput = document.createElement('input')
-    phoneNumberInput.setAttribute('type', 'tel')
-    phoneNumberInput.setAttribute('name', 'tel')
-    const phoneNumberLabel = document.createElement('label')
-    const phoneNumberLabelText = document.createTextNode('Phone Number:')
-    phoneNumberLabel.append(phoneNumberLabelText)
-    phoneNumberLabel.append(phoneNumberInput)
-    phoneNumberLabel.setAttribute('for', 'tel')
-
     const passwordInput = document.createElement('input')
     passwordInput.setAttribute('type', 'password')
     passwordInput.setAttribute('name', 'password')
@@ -40,41 +22,32 @@ export default function signUpForm(){
     passwordLabel.append(passwordInput)
     passwordLabel.setAttribute('for', 'password')
 
-
-
     const submit = document.createElement('input')
     submit.setAttribute('type', 'submit')
-    submit.setAttribute('value', 'Signup')
-    // const submitText = document.createTextNode('Submit')
-    // submit.append(submitText)
-    submit.setAttribute('id', 'submit-form')//CSS id for Submit Button
+    submit.setAttribute('value', 'Signin')
+    submit.setAttribute('id', 'submit-form')
 
     form.addEventListener('submit', function(event) {
             event.preventDefault();
-            console.log('test');
             const formData = {
-                name: nameInput.value,
                 email: emailInput.value,
-                phone: phoneNumberInput.value,
                 password: passwordInput.value
             }
             console.log("formData => ", formData);
             
-            fetch('http://localhost:3010/users/signup', {
+            fetch('http://localhost:3010/users/signin', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(formData)
             })
             .then(result => {
+                console.log('result => ', result);
                 let resultText;
-                form.removeChild(nameLabel)
                 form.removeChild(emailLabel)
-                form.removeChild(phoneNumberLabel)
                 form.removeChild(passwordLabel)
                 form.removeChild(submit)
-                form.parentNode.removeChild(form.nextSibling)
                 if (result.status === 200) {
-                    resultText = document.createTextNode('Thank you for signing up.')
+                    resultText = document.createTextNode('Thank you for signing in.')
                 } else {
                     resultText = document.createTextNode('Please try again.')
                 }
@@ -82,12 +55,9 @@ export default function signUpForm(){
             })
     })
 
-    form.append(nameLabel)
     form.append(emailLabel)
-    form.append(phoneNumberLabel)
     form.append(passwordLabel)
     form.append(submit)
 
     return form
 }
-
