@@ -20,6 +20,7 @@ export default function Projects() {
     signupContainer.append(RightContainer)
 
     const orSignin = document.createElement('p')
+    //orSignin.setAttribute('class', 'orSignin')
     
     const orSigninText = document.createTextNode('Or Signin')
    
