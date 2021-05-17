@@ -88,11 +88,8 @@ export default function donate() {
     secondContainer.append(secondLeftContainer)
 
     const secondLeftContainerBox3 = document.createElement('div')
-    const secondLeftContainerBox3Paragraph = document.createElement('p') //Paragraph tag
-    const secondLeftContainerBox3ParagraphText = document.createTextNode ('button')
-    secondLeftContainerBox3Paragraph.append(secondLeftContainerBox3ParagraphText)
+    secondLeftContainerBox3.append(donateButton())
     secondLeftContainerBox3.setAttribute('class', 'donate_second-Left-container-box3')
-    secondLeftContainerBox3.append(secondLeftContainerBox3Paragraph)
     secondLeftContainer.append(secondLeftContainerBox3)
     secondContainer.append(secondLeftContainer)
 
@@ -131,11 +128,8 @@ export default function donate() {
     thirdContainer.append(thirdRightContainer)
 
     const thirdRightContainerBox3 = document.createElement('div')
-    const thirdRightContainerBox3Paragraph = document.createElement('p') //Paragraph tag
-    const thirdRightContainerBox3ParagraphText = document.createTextNode ('button')
-    thirdRightContainerBox3Paragraph.append(thirdRightContainerBox3ParagraphText)
+    thirdRightContainerBox3.append(donateButton())
     thirdRightContainerBox3.setAttribute('class', 'donate_third-right-container-box3')
-    thirdRightContainerBox3.append(thirdRightContainerBox3Paragraph)
     thirdRightContainer.append(thirdRightContainerBox3)
     thirdContainer.append(thirdRightContainer)
 

@@ -125,6 +125,7 @@ html, body, body div, span, object, iframe, p, blockquote, pre, abbr, address, c
     
 }
 
+
 /* ########### Donate ############ */
 
 .donate_container{
@@ -147,33 +148,28 @@ html, body, body div, span, object, iframe, p, blockquote, pre, abbr, address, c
     display: flex;
     flex-direction: column;
     max-width: 50%;
-    
-    
 } 
 
 .donate_first-right-container-box1{
-    
     display: flex;
     justify-content: center;
     align-content: center;
     margin-left: 20%;
     margin-right: 20%;
-
 }
 
 .donate_first-right-container-box2{
-
     display: flex;
     justify-content: left;
     align-content: left;
     padding:10%;
 }
+
 .donate_first-right-container-box3{
     display: flex;
     justify-content: center;
     align-content: center;
     align-items: center;
-    background-color:yellow;
 }
 
 .donate_first-Left-container{
@@ -182,15 +178,12 @@ html, body, body div, span, object, iframe, p, blockquote, pre, abbr, address, c
     height: 100%;
     justify-content: center;
     align-content: center;
-    
-
 }
 
 .donate_first-Left-Container-Picture{
     display: flex;
     width: 350px;
     margin: 5%;
-    
 }
 
 .donate_second-container{
@@ -198,7 +191,6 @@ html, body, body div, span, object, iframe, p, blockquote, pre, abbr, address, c
     justify-content: space-between;
     width: 90%;
     height: 40rem;
-    /* background-color: lightblue; */
     margin: 2rem;
     padding-top: 5%;
     flex-direction: row-reverse;
@@ -211,11 +203,9 @@ html, body, body div, span, object, iframe, p, blockquote, pre, abbr, address, c
     height: 100%;
     justify-content: center;
     align-content: center;
-
 }
 
 .donate_second-Right-Container-Picture{
-
     max-width: 350px;
     max-height:400px;
     display: flex;
@@ -226,22 +216,17 @@ html, body, body div, span, object, iframe, p, blockquote, pre, abbr, address, c
 .donate_second-Left-container{
     width: 45%;
     height: 100%;
-
-
 }
 
 .donate_second-Left-container-box1{
-
     display: flex;
     justify-content: center;
     align-content: center;
     margin-left: 20%;
     margin-right: 20%;
-
 }
 
 .donate_second-Left-container-box2{
-
     display: flex;
     justify-content: left;
     align-content: left;
@@ -249,7 +234,6 @@ html, body, body div, span, object, iframe, p, blockquote, pre, abbr, address, c
 }
 
 .donate_second-Left-container-box3{
-
     display: flex;
     justify-content: center;
     align-content: center;
@@ -261,54 +245,61 @@ html, body, body div, span, object, iframe, p, blockquote, pre, abbr, address, c
     justify-content: space-between;
     width: 90%;
     height: 40rem;
-    /* background-color: lightcoral; */
     margin: 2rem;
 }
 
-
 .donate_third-left-container{
-
     display: flex;
     width: 45%;
     height: 100%;
     justify-content: center;
     align-content: center;
 }
-.donate_third-Left-Container-Picture{
 
+.donate_third-Left-Container-Picture{
     display: flex;
     max-width: 350px;
     max-height: 500px;
     margin: 5%;
 
 }
-.donate_third-Right-container{
 
+.donate_third-Right-container{
     display: flex;
     flex-direction: column;
     max-width: 50%;
 }
-.donate_third-right-container-box1{
 
+.donate_third-right-container-box1{
     display: flex;
     justify-content: center;
     align-content: center;
     margin-left: 20%;
     margin-right: 20%;
 }
-.donate_third-right-container-box2{
 
+.donate_third-right-container-box2{
     display: flex;
     justify-content: left;
     align-content: left;
     padding:10%;
 }
-.donate_third-right-container-box3{
 
+.donate_third-right-container-box3{
     display: flex;
     justify-content: center;
     align-content: center;
     align-items: center;
+}
+
+.donate-button {
+    height: 3rem;
+    width: 20rem;
+    font-size: 1.5rem;
+    border-color: black;
+    border-radius: 2rem;
+    background-color:yellow;
+    padding: 3px;
 }
 
 
@@ -448,6 +439,7 @@ html, body, body div, span, object, iframe, p, blockquote, pre, abbr, address, c
     background-color:yellow;
     border-radius: 20px;
 }
+
 
 /* ########### media query ############ */
 

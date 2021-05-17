@@ -13,6 +13,7 @@ export default function donateButton(){
     const submit = document.createElement('input')
     submit.setAttribute('type', 'submit')
     submit.setAttribute('value', 'Donate')
+    submit.setAttribute('class', 'donate-button')
 
     form.append(input)
     form.append(submit)
